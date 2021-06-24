@@ -4,6 +4,7 @@ const app = express();
 const path = require('path');
 
 app.use('/static', express.static(path.name(__dirname + '/public')))
+app.use('/styles', express.static(path.join(__dirname, 'public/styles.css')))
 
 
 app.get('/', function(req, res) {
