@@ -3,7 +3,7 @@ const app = express();
 
 const path = require('path');
 
-app.use(express.static(__dirname + '/public')))
+app.use(express.static(__dirname + '/public'))
 app.use('/styles', express.static(path.join(__dirname, 'public/styles.css')))
 
 
